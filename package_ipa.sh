@@ -30,7 +30,7 @@ mkdir -p "${TEMP_IPA_BUILT}/Payload"
 cp -Rp "${APP}" "${TEMP_IPA_BUILT}/Payload"
 
 echo "+ Adding SWIFT support (if necessary)"
-if [ -d "${APP}/Frameworks" ];
+if [ -d "${APP}"/Frameworks ];
 then
     mkdir -p "${TEMP_IPA_BUILT}/SwiftSupport"
 
